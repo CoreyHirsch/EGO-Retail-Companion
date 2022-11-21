@@ -1,6 +1,14 @@
 import SwiftUI
-
+import CodeScanner
 struct CustomerInformationForm: View {
+    
+    @State var isPresentingScanner = false;
+    @State var scannedCode: String = "Scan a QR code to get started.";
+    
+    @State var tool = ["Model", "SerialNum"];
+    @State var cusTools = [];
+    @State var toolModel:String;
+    @State var toolSerial:String;
     
     @State var customerName:String;
     @State var customerEmail:String;
@@ -17,7 +25,7 @@ struct CustomerInformationForm: View {
     enum CusState:String, CaseIterable, Identifiable {
         case AK;        case AL;        case AR;        case AZ;
         case CA;        case CO;        case CT;        case DE;
-        case FL;        case GA;        case HI;        case IA;
+        case FL;//        case GA;        case HI;        case IA;
         case ID;        case IL;        case IN;        case KS;
         case KY;        case LA;        case MA;        case MD;
         case ME;        case MI;        case MN;        case MO;
@@ -88,6 +96,22 @@ struct CustomerInformationForm: View {
             TextField("12345", text: $customerZipcode);
         }
         
+        HStack {
+            Text("Model: ").font(.title3).foregroundColor(Color.init(red: 122/255, green: 193/255, blue: 66/255)).bold();
+            TextField("ST2400", text: $toolModel);
+        }
+        HStack {
+            Text("Serial:").font(.title3).foregroundColor(Color.init(red: 122/255, green: 193/255, blue: 66/255)).bold();
+            TextField("NSB123456789X", text: $toolSerial);
+        }
+        
+        HStack {
+            Button("Submit") {              
+                
+                
+                
+            }.padding().font(.title).foregroundColor(.white).background(Color.green).cornerRadius(40)
+        }
         
         HStack {
             Picker(selection: $selectState, label: Text("Tools")){
