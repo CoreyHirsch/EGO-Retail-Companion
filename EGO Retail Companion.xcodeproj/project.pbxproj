@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		046509E6292B250400A28188 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 046509E5292B250400A28188 /* CodeScanner */; };
+		04650A38293D0EAA00A28188 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04650A37293D0EAA00A28188 /* CameraView.swift */; };
 		04F847572906295A009809AF /* EgoCompanion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F847562906295A009809AF /* EgoCompanion.swift */; };
 		04F847592906295A009809AF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F847582906295A009809AF /* HeaderView.swift */; };
 		04F8475B2906295C009809AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F8475A2906295C009809AF /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04650A37293D0EAA00A28188 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		04F847532906295A009809AF /* EGO Retail Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EGO Retail Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F847562906295A009809AF /* EgoCompanion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgoCompanion.swift; sourceTree = "<group>"; };
 		04F847582906295A009809AF /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				04F847582906295A009809AF /* HeaderView.swift */,
 				04F8475A2906295C009809AF /* Assets.xcassets */,
 				04F8475C2906295C009809AF /* Preview Content */,
+				04650A37293D0EAA00A28188 /* CameraView.swift */,
 			);
 			path = "EGO Retail Companion";
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				04F8476729062ACF009809AF /* CustomerInformationForm.swift in Sources */,
 				04F8476529062A73009809AF /* InformationView.swift in Sources */,
 				04F847592906295A009809AF /* HeaderView.swift in Sources */,
+				04650A38293D0EAA00A28188 /* CameraView.swift in Sources */,
 				04F847572906295A009809AF /* EgoCompanion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +290,7 @@
 				DEVELOPMENT_TEAM = H62XJ8X854;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to Scan QR Code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -315,6 +320,7 @@
 				DEVELOPMENT_TEAM = H62XJ8X854;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to Scan QR Code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

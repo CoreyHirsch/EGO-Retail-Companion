@@ -2,7 +2,12 @@ import SwiftUI
 
 struct InformationView: View {
     @EnvironmentObject var gameState:GameState;
+    
+    
     var body: some View {
+        //let toolList = CustomerInformationForm().toolList
+        
+        
         Header();
         VStack{
             Text("Customer Information:");
@@ -34,30 +39,18 @@ struct InformationView: View {
                 
             }
             
-            HStack {
-                List {
-                    Text("LB7654 NLB101515128X")
-                    Text("ST1501 NST101591527X")
-                    Text("BA2800 NBA105151132X")
-                }
-            }
+//            HStack {
+//                ForEach(CustomerInformationForm().toolList, id: \.self) { tool in
+//                    Text("Model: \(tool.model) Serial: \(tool.serialNumber)")
+//                    }
+//                
+//            }
         }
         CustomDivider(color: Color.init(red: 122/255, green: 193/255, blue: 66/255), height: 5);
         
         HStack {
             
             
-            Button(action: {
-                //ACTIONS
-            }) {
-                HStack {
-                    Image(systemName: "printer")
-                        
-                    Text("Print")
-                        .fontWeight(.semibold)
-                        
-                }.padding().foregroundColor(.white).background(Color.red).cornerRadius(40)
-            }
             
             Button(action: {
                 //ACTIONS
